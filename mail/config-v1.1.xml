@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<clientConfig version="1.1">
+  <emailProvider id="omegavoid.codes">
+    <domain>omegavoid.codes</domain>
+    <displayName>OmegaCloud Mail</displayName>
+    <displayShortName>OmegaCloud</displayShortName>
+    <incomingServer type="imap">
+      <hostname>mail.omegavoid.codes</hostname>
+      <port>993</port>
+      <socketType>SSL</socketType>
+      <authentication>password-encrypted</authentication>
+      <username>%EMAILLOCALPART%</username>
+    </incomingServer>
+    <incomingServer type="imap">
+      <hostname>mail.omegavoid.codes</hostname>
+      <port>143</port>
+      <socketType>STARTTLS</socketType>
+      <authentication>password-encrypted</authentication>
+      <username>%EMAILLOCALPART%</username>
+    </incomingServer>
+    <incomingServer type="pop3">
+      <hostname>mail.omegavoid.codes</hostname>
+      <port>995</port>
+      <socketType>SSL</socketType>
+      <authentication>password-cleartext</authentication>
+      <username>%EMAILLOCALPART%</username>
+    </incomingServer>
+    <incomingServer type="pop3">
+      <hostname>mail.omegavoid.codes</hostname>
+      <port>110</port>
+      <socketType>STARTTLS</socketType>
+      <authentication>password-cleartext</authentication>
+      <username>%EMAILLOCALPART%</username>
+    </incomingServer>
+    <outgoingServer type="smtp">
+      <hostname>mail.omegavoid.codes</hostname>
+      <port>465</port>
+      <socketType>SSL</socketType>
+      <authentication>password-encrypted</authentication>
+      <username>%EMAILLOCALPART%</username>
+    </outgoingServer>
+    <outgoingServer type="smtp">
+      <hostname>mail.omegavoid.codes</hostname>
+      <port>25</port>
+      <socketType>STARTTLS</socketType>
+      <authentication>password-encrypted</authentication>
+      <username>%EMAILLOCALPART%</username>
+    </outgoingServer>
+  </emailProvider>
+</clientConfig>
