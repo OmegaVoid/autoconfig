@@ -5,13 +5,13 @@
     <domain>omegavoid.codes</domain>
     <displayName>OmegaCloud Mail</displayName>
     <displayShortName>OmegaCloud</displayShortName>
-    <incomingServer type="imap">
+    <!-- <incomingServer type="imap">
       <hostname>mail.omegavoid.codes</hostname>
       <port>993</port>
       <socketType>SSL</socketType>
       <authentication>password-encrypted</authentication>
       <username>%EMAILLOCALPART%</username>
-    </incomingServer>
+    </incomingServer> -->
     <incomingServer type="imap">
       <hostname>mail.omegavoid.codes</hostname>
       <port>143</port>
@@ -19,13 +19,13 @@
       <authentication>password-encrypted</authentication>
       <username>%EMAILLOCALPART%</username>
     </incomingServer>
-    <incomingServer type="pop3">
+    <!-- <incomingServer type="pop3">
       <hostname>mail.omegavoid.codes</hostname>
       <port>995</port>
       <socketType>SSL</socketType>
       <authentication>password-cleartext</authentication>
       <username>%EMAILLOCALPART%</username>
-    </incomingServer>
+    </incomingServer> -->
     <incomingServer type="pop3">
       <hostname>mail.omegavoid.codes</hostname>
       <port>110</port>
@@ -33,13 +33,13 @@
       <authentication>password-cleartext</authentication>
       <username>%EMAILLOCALPART%</username>
     </incomingServer>
-    <outgoingServer type="smtp">
+   <!--  <outgoingServer type="smtp">
       <hostname>mail.omegavoid.codes</hostname>
       <port>465</port>
       <socketType>SSL</socketType>
       <authentication>password-encrypted</authentication>
       <username>%EMAILLOCALPART%</username>
-    </outgoingServer>
+    </outgoingServer> -->
     <outgoingServer type="smtp">
       <hostname>mail.omegavoid.codes</hostname>
       <port>25</port>
