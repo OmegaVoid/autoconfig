@@ -15,7 +15,7 @@
     <incomingServer type="imap">
       <hostname>mail.omegavoid.codes</hostname>
       <port>143</port>
-      <socketType>STARTTLS</socketType>
+      <socketType>plain</socketType>
       <authentication>password-encrypted</authentication>
       <username>%EMAILLOCALPART%</username>
     </incomingServer>
@@ -29,7 +29,7 @@
     <incomingServer type="pop3">
       <hostname>mail.omegavoid.codes</hostname>
       <port>110</port>
-      <socketType>STARTTLS</socketType>
+      <socketType>plain</socketType>
       <authentication>password-cleartext</authentication>
       <username>%EMAILLOCALPART%</username>
     </incomingServer>
@@ -43,7 +43,7 @@
     <outgoingServer type="smtp">
       <hostname>mail.omegavoid.codes</hostname>
       <port>25</port>
-      <socketType>STARTTLS</socketType>
+      <socketType>plain</socketType>
       <authentication>password-encrypted</authentication>
       <username>%EMAILLOCALPART%</username>
     </outgoingServer>
